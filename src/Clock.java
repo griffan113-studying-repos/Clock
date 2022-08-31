@@ -6,10 +6,16 @@ public class Clock {
     public Clock() {
         hours = new NumberDisplay(24);
         minutes = new NumberDisplay(60);
+        updateDisplay();
     }
 
     public void setTime(int hour, int minute) {
         hours.setValue(hour);
-        hours.setValue(minute);
+        minutes.setValue(minute);
+        updateDisplay();
+    }
+
+    private void updateDisplay() {
+
     }
 }
