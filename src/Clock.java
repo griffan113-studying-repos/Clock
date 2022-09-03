@@ -16,6 +16,11 @@ public class Clock {
     }
 
     private void updateDisplay() {
+        displayString = hours.getDisplayString() + ":" + minutes.getDisplayString();
+    }
 
+    public void timeTick() {
+        minutes.increment();
+        if (minutes.getValue() == 0) hours.increment();
     }
 }

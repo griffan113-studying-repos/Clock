@@ -25,4 +25,8 @@ public class NumberDisplay {
             this.value = value;
         }
     }
+
+    public int getValue() {
+        return value;
+    }
 }
